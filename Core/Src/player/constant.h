@@ -1,0 +1,9 @@
+#ifndef __PLAYER_CONSTANT_H
+#define __PLAYER_CONSTANT_H
+
+#define NUM_AUDIO_CHANNEL 4
+#define NUM_LINES_PER_PATTERN 64
+
+#define CMD_FX_JMP 1
+
+#endif // !__PLAYER_CONSTANT_H
