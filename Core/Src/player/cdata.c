@@ -1275,34 +1275,3 @@ const Sample_t cdata_keil_samples[0x20] = {
     EMPTY_SAMPLE(0x1d),
     {cdata_keil_sample_1e,SAMPLE_INDEX_FROM_INTERGAL(1338),NOTE_C(4),kLoopMode_Forward,SAMPLE_INDEX_FROM_INTERGAL(234)}
 };
-
-//void LoadCData(void) {
-//    uint32_t idxs[] = { 1,2,4,5,6,7,0xc,0xd,0xe,0xf,0x1e };
-//    for (int i = 0; i < 11; ++i) {
-//        cdata_keil_samples[idxs[i]] = LoadFromFile(sample_names[i]);
-//    }
-//
-//    cdata_keil_samples[1].loop_mode = kLoopMode_Forward;
-//    cdata_keil_samples[1].loop_start_pos = 0;
-//
-//    cdata_keil_samples[2].loop_mode = kLoopMode_Forward;
-//    cdata_keil_samples[2].loop_start_pos = 24120;
-//
-//    cdata_keil_samples[0xc].loop_mode = kLoopMode_Forward;
-//    cdata_keil_samples[0xc].loop_start_pos = 25254;
-//
-//    cdata_keil_samples[0xe].loop_mode = kLoopMode_Forward;
-//    cdata_keil_samples[0xe].loop_start_pos = 176;
-//
-//    cdata_keil_samples[0xf].loop_mode = kLoopMode_Forward;
-//    cdata_keil_samples[0xf].loop_start_pos = 5266;
-//
-//    cdata_keil_samples[0x1e].loop_mode = kLoopMode_Forward;
-//    cdata_keil_samples[0x1e].loop_start_pos = 234;
-//}
-//
-//void UnLoadCData(void) {
-//    for (int i = 0; i < 11; ++i) {
-//        Sample_DeInit(cdata_keil_samples + i);
-//    }
-//}

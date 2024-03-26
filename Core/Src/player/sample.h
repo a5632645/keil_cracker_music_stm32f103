@@ -11,19 +11,13 @@ typedef enum {
 } LoopMode_enum;
 
 typedef struct {
-    //float* data;
     const uint8_t* data;
-    //uint32_t length;
     SampleIndex_t length;
     uint8_t base_pitch;
 
     LoopMode_enum loop_mode;
-    //uint32_t loop_start_pos;
     SampleIndex_t loop_start_pos;
 } Sample_t;
-
-//Sample_t LoadFromFile(const char* filename);
-//void Sample_DeInit(Sample_t* pSample);
 
 inline static uint32_t Sample_GetSample(const Sample_t* pSample, uint32_t index) {
     uint32_t bit_index = index & 0b111;

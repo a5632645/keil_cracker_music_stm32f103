@@ -1,7 +1,6 @@
 #include "player.h"
 #include "cdata.h"
 #include <memory.h>
-#include <stdio.h>
 
 void Player_Init(Player_t* pPlayer) {
     pPlayer->pSample_array = cdata_keil_samples;
