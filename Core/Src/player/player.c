@@ -59,10 +59,8 @@ void Player_NextLine(Player_t* pPlayer) {
             continue;
         }
 
-        Command_t cmd = {
-            .command = pPlayer->pCurrent_pattern->patterns[i].commands[next_command_idx]
-        };
-        if (cmd.line_no == pPlayer->line_pos) {
+        Command_t cmd = { .command = pPlayer->pCurrent_pattern->patterns[i].commands[next_command_idx] };
+        if (cmd.line_no <= pPlayer->line_pos) {
             pPlayer->next_command_idxs[i]++;
 
             const uint8_t fx_type = (cmd.fx & 0xf0) >> 4;

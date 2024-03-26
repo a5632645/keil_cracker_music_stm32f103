@@ -17,9 +17,9 @@ inline static SampleIndex_t SampleIndex_Sub(SampleIndex_t lh, SampleIndex_t rh) 
     return lh - rh;
 }
 
-#define SAMPLE_INDEX_FROM_INTERGAL(INTERGAL) (INTERGAL * 256)
+#define SAMPLE_INDEX_FROM_INTERGAL(INTERGAL) ((INTERGAL) * 256)
 inline static SampleIndex_t SampleIndex_FromIntergal(int32_t intergal) {
-    return intergal * 256;
+    return SAMPLE_INDEX_FROM_INTERGAL(intergal);
 }
 
 inline static int32_t SampleIndex_IntergalPart(SampleIndex_t val) {

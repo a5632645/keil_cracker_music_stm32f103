@@ -7,9 +7,7 @@
 
 typedef struct _Sampler {
     const Sample_t* sample;
-    //float current_index;
     SampleIndex_t current_index;
-    //float index_step;
     SampleIndex_t index_step;
     uint8_t play_pitch;
     bool is_forward;
